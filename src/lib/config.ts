@@ -10,7 +10,7 @@ function hoursTemplate(a, b) {
 }
 
 export const taskTypes = [
-    { id: "task", label: "Anime" },
+    { id: "task", label: "Task" },
     { id: "summary", label: "Summary task" },
     { id: "milestone", label: "Milestone" },
     { id: "urgent", label: "Urgent" },
