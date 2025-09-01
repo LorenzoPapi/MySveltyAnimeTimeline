@@ -1,14 +1,15 @@
-# MyAnimeTimeline
+# MySveltyAnimeTimeline
 
-[![Chat on Discord](https://img.shields.io/discord/696033621986770957?label=Chat%20on%20Discord)](https://discord.gg/HT4ttdQ)
+A fork of the original [MyAnimeTimeline](https://github.com/TimboKZ/MyAnimeTimeline), since the original website went down.
 
-A small web app that maps titles from a MyAnimeList account to a timeline. 
+## Main changes
 
-Available at [https://hosting.kawaiidesu.me/MyAnimeTimeline/](https://hosting.kawaiidesu.me/MyAnimeTimeline/).
+- Now written in [Svelte](http://svelte.dev) because I didn't want to let ReactJS get any closer to my PC.
+- Probably will have language support.
 
-Tools used:
+## Tools used
 
 * [MyAnimeList](https://myanimelist.net/) as the data source.
-* [vis.js](http://visjs.org/) to draw the time lines.
-* [React](https://reactjs.org/) for all DOM manipulations.
-* [Moment.js](https://momentjs.com/) for date manipulations.
+* [Svelte Gantt](https://svar.dev/svelte/gantt/) to create the timeline itself.
+
+Available at (still haven't deployed it).
