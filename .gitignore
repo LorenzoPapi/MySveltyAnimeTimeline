@@ -23,7 +23,5 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-project.inlang/cache
-
 # Paraglide
 src/lib/paraglide
