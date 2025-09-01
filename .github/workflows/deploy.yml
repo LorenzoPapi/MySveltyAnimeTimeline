@@ -44,6 +44,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v4

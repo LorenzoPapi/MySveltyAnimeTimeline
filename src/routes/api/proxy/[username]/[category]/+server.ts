@@ -1,13 +1,15 @@
 import { json, text } from '@sveltejs/kit';
-import { CLIENT_ID, CLIENT_SECRET, API_URL } from "$env/static/private"
+import { MAL_CLIENT_ID } from "$env/static/private"
 
 export const GET = async ({ params, fetch }) => {
     const { username, category } = params
 
-    const target = `${API_URL.replace(/\/$/, '')}/users/${encodeURIComponent(username)}/${category}list?fields=list_status&limit=1000&nsfw=true`
+    const MAL_API_URL = "https://api.myanimelist.net/v2"
+
+    const target = `${MAL_API_URL.replace(/\/$/, '')}/users/${encodeURIComponent(username)}/${category}list?fields=list_status&limit=1000&nsfw=true`
     try {
         const res = await fetch(target, {
-            headers: { "X-MAL-CLIENT-ID": `${CLIENT_ID}` }
+            headers: { "X-MAL-CLIENT-ID": `${MAL_CLIENT_ID}` }
         });
 
         const result: MSATObj[] = [];
